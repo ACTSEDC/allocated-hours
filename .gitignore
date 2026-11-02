@@ -24,5 +24,5 @@ dist-ssr
 *.sw?
 
 # Envirnment variables
-*.env
+.env
 !.env.exmaple
