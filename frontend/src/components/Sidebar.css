@@ -9,12 +9,21 @@
 }
 
 .sidebar-brand {
-  height: 48px;
+  height: 52px;
   padding: 0 16px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   border-bottom: 1px solid var(--sidebar-border);
+}
+
+.brand-logo-img {
+  height: 30px;
+  width: auto;
+  max-width: 36px;
+  object-fit: contain;
+  border-radius: var(--radius-xs);
+  flex-shrink: 0;
 }
 
 .brand-title {

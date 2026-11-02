@@ -1,0 +1,9 @@
+# Sample/dummy spreadsheets
+*.xlsx
+*.xls
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+

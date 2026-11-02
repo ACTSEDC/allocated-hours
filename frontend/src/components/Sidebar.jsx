@@ -7,6 +7,7 @@ import {
   FileSpreadsheet
 } from 'lucide-react';
 import { useSheet } from '../services/useSheet';
+import actsLogo from '../assets/acts logo png.png';
 import './Sidebar.css';
 
 export default function Sidebar({ activePage, setActivePage }) {
@@ -24,8 +25,9 @@ export default function Sidebar({ activePage, setActivePage }) {
     <aside className="club-sidebar">
       {/* Brand Header */}
       <div className="sidebar-brand">
+        <img src={actsLogo} alt="ACTS Logo" className="brand-logo-img" />
         <span className="brand-title">ClubHours</span>
-        <span className="brand-tag">App</span>
+        <span className="brand-tag">ACTS</span>
       </div>
 
       {/* Main Navigation */}
