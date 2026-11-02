@@ -1,3 +1,5 @@
+@import './styles/variables.css';
+
 /* Global reset and base styles */
 *,
 *::before,
@@ -7,18 +9,33 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  font-size: 16px;
+  font-family: var(--font-family);
+  font-size: 14px;
   line-height: 1.5;
-  color: #111;
-  background-color: #fff;
+  color: var(--text-primary);
+  background-color: var(--bg-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
   min-height: 100vh;
+  display: flex;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 a {
@@ -26,14 +43,6 @@ a {
   text-decoration: none;
 }
 
-img,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-ul,
-ol {
+ul, ol {
   list-style: none;
 }
-
