@@ -1,6 +1,40 @@
-/* App-level styles */
-.app {
+.app-layout {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  overflow-x: hidden;
+}
+
+.app-main-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-width: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.app-page-wrapper {
+  flex: 1;
+  padding: 16px 20px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .app-main-content {
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .app-page-wrapper {
+    padding: 12px;
+  }
 }
